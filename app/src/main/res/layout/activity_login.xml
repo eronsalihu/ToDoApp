@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@android:color/white"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="ToDo"
+            android:fontFamily="@font/tumbly"
+            android:textColor="@android:color/secondary_text_light"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pencil"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="10dp"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_background"
+            android:textColorHint="@android:color/secondary_text_light"
+            android:textColor="@android:color/secondary_text_light"
+            />
+
+        <EditText
+            android:id="@+id/login_psw"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_background"
+            android:textColorHint="@android:color/secondary_text_light"
+            android:textColor="@android:color/secondary_text_light"
+
+            />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Log In"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bc_button"
+            />
+
+        <TextView
+            android:id="@+id/forgotPsw_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text=" Register"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

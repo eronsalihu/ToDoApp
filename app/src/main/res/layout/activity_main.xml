@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        />
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:text="ToDo"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/tumbly"
+                android:textColor="@android:color/white"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_pencil"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/greet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/tumbly"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            tools:text="Good morning"
+            android:hint="Good morning"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="26sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="monospace"
+            android:textStyle="bold"/>
+
+        <SearchView
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:inputType="text"
+            android:searchIcon="@drawable/ic_search"
+            android:queryHint="Search"
+            android:iconifiedByDefault="false"
+            android:background="@drawable/search_bar" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/line1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+
+        <include android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/fragment_to_do"/>
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="#9A3DC4"
+        />
+
+
+
+
+</RelativeLayout>

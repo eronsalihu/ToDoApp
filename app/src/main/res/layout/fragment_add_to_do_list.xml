@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    tools:context=".AddToDoListFragment"
+    android:background="@drawable/fragment_bc"
+    android:id="@+id/fragment_todo">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:requiresFadingEdge="vertical"
+        android:fadingEdgeLength="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="left"
+            android:paddingLeft="30sp"
+            android:paddingTop="30sp"
+            android:text="Create to do list "
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingTop="30dp"
+            android:background="@drawable/close_bc"
+            android:src="@drawable/ic_close" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/task_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_bc"
+                android:hint="Write task name"
+                android:paddingLeft="10dp"
+                android:inputType="text"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/descriptionTask"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/eddittext_background"
+                android:hint="Add subject"
+                android:paddingLeft="10dp"
+                android:inputType="text"
+                android:textColor="@android:color/secondary_text_light"
+                android:textColorHint="@android:color/secondary_text_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Date"
+                android:paddingLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/secondary_text_light"/>
+
+            <CalendarView
+                android:id="@+id/set_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/bc_calendar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Color"
+                android:paddingLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/secondary_text_light"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/link"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/red_selector"
+                        android:button="@null"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/meet"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@null"
+                        android:background="@drawable/green_selector"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/mail"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@null"
+                        android:background="@drawable/orange_selector"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/bills"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@null"
+                        android:background="@drawable/blue_selector"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/files"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@null"
+                        android:background="@drawable/gray_selector"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/create_todo_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bc_create"
+                android:text="Create"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

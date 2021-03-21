@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ToDo" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#a2d9ff</item>
+        <item name="colorPrimaryVariant">#a2d9ff</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/colorPrimary</item>
+        <item name="colorOnSecondary">@color/colorPrimary</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+    </style>
+
+    <style name="Theme.ToDo.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#7150FD</item>
+        <item name="colorPrimaryVariant">#7150FD</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/colorPrimary</item>
+        <item name="colorOnSecondary">@color/colorPrimary</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+    </style>
+
+    <style name="Theme.ToDo.Register.LogIn" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#fff</item>
+        <item name="colorPrimaryVariant">#fff</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/colorPrimary</item>
+        <item name="colorOnSecondary">@color/colorPrimary</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+    </style>
+</resources>
